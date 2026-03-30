@@ -28,4 +28,4 @@ Creates a personalized open source statement.
 
 ```bash
 chmod +x script1.sh
-./script1.sh# oss-audit-24BAC10063
+./script1.sh
