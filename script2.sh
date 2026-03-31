@@ -3,9 +3,9 @@
 
 PACKAGE="git"
 
-if dpkg -l | grep -q $PACKAGE; then
+if dpkg -s $PACKAGE &>/dev/null; then
     echo "$PACKAGE is installed."
-    dpkg -s $PACKAGE | grep -E 'Version|Maintainer|Description'
+    dpkg -s $PACKAGE | grep -E 'Version|Maintainer|Description|Homepage'
 else
     echo "$PACKAGE is NOT installed."
 fi
