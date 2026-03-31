@@ -8,7 +8,7 @@ echo "----------------------"
 
 for DIR in "${DIRS[@]}"; do
     if [ -d "$DIR" ]; then
-        PERMS=$(ls -ld $DIR | awk '{print $1, $3, $4}')
+        PERMS=$(ls -ld "$DIR" | awk '{print "Perm:",$1,"Owner:", $3,"Group:", $4}')
         SIZE=$(du -sh $DIR 2>/dev/null | cut -f1)
         echo "$DIR => Permissions: $PERMS | Size: $SIZE"
     else
@@ -17,9 +17,9 @@ for DIR in "${DIRS[@]}"; do
 done
 
 # Git config directory check
-if [ -d "/etc/git" ]; then
-    echo "Git config directory exists:"
-    ls -ld /etc/git
+if [ -f "/etc/gitconfig" ]; then
+ echo "Git config file exists:"
+ ls -l /etc/gitconfig
 else
-    echo "Git config directory not found"
+ echo "Git config file not found"
 fi
