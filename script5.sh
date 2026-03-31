@@ -1,7 +1,8 @@
 #!/bin/bash
 # Script 5: Open Source Manifesto Generator
 
-echo "Answer three questions"
+echo "Answer three questions to generate your manifesto"
+echo""
 
 read -p "1. Tool you use: " TOOL
 read -p "2. Freedom means: " FREEDOM
