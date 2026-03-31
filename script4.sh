@@ -1,4 +1,3 @@
-script4.sh
 #!/bin/bash
 # Script 4: Log File Analyzer
 
