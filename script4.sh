@@ -6,7 +6,7 @@ KEYWORD=${2:-"error"}
 COUNT=0
 
 if [ ! -f "$LOGFILE" ]; then
-    echo "Error: File not found"
+    echo "Error: File $LOGFILE not found"
     exit 1
 fi
 
