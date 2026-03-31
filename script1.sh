@@ -1,4 +1,3 @@
-script1.sh
 #!/bin/bash
 # Script 1: System Identity Report
 # Author: Pranjul Priyadarshi
