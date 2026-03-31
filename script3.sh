@@ -1,4 +1,3 @@
-script3.sh
 #!/bin/bash
 # Script 3: Disk and Permission Auditor
 
