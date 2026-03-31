@@ -10,10 +10,10 @@ SOFTWARE_CHOICE="Git"
 # -------- System Info --------
 KERNEL=$(uname -r)
 USER_NAME=$(whoami)
-HOME_DIR=$HOME
+HOME_DIR=$(echo $HOME)
 UPTIME=$(uptime -p)
 DATE=$(date)
-DISTRO=$(grep PRETTY_NAME /etc/os-release | cut -d= -f2 | tr -d '"')
+DISTRO=$("^grep PRETTY_NAME" /etc/os-release | cut -d= -f2 | tr -d '"')
 
 # -------- Output --------
 echo "======================================"
